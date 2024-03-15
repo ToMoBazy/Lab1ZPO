@@ -1,0 +1,17 @@
+Główną różnicą w wzorcu strategia jest o, że wzorzec strategii pozwala na dynamiczną zmianę zachowania obiektu w trakcie działania programu, podczas gdy
+ zwykła implementacja interfejsu definiuje jedynie zestaw metod, które muszą być zaimplementowane przez klasę. Wzorzec strategii jest 
+bardziej elastyczny i umożliwia wybór odpowiedniego algorytmu lub zachowania w zależności od potrzeb
+
+
+Zalety wzorca Strategia:
+- Możesz zamieniać algorytmy stosowane w obrębie obiektu w trakcie działania programu.
+-Możesz odizolować szczegóły implementacyjne algorytmu od kodu który z niego korzysta.
+-Umożliwia zamianę dziedziczenia na kompozycję.
+-Zasada otwarte/zamknięte. Możliwe jest wprowadzanie nowych strategii bez konieczności dokonywania zmian w kontekście.
+
+Wady wzorca Strategia:
+-Jeśli masz zaledwie kilka algorytmów i rzadko ulegają one zmianie, nie ma wyraźnej potrzeby nadmiernego komplikowania programu 
+przez dodawanie nowych klas i interfejsów związanych z tym wzorcem.
+- Klienci muszą być świadomi różnic pomiędzy poszczególnymi strategiami, aby mogli wybrać właściwą.
+-Wiele nowoczesnych języków programowania posiada wsparcie dla typów funkcyjnych pozwalających zaimplementować różne wersje algorytmu wewnątrz zestawu 
+anonimowych funkcji. Można następnie korzystać z tych funkcji dokładnie tak jak z obiektów strategia, ale bez konieczności rozbudowy kodu o kolejne klasy i interfejsy.
